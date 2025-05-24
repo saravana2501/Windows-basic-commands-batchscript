@@ -23,6 +23,7 @@ Execute the necessary commands/batch file for the desired output.
 # WINDOWS COMMANDS:
 ## Exercise 1: Basic Directory and File Operations
 mkdir my-folder
+
 rmdir my-folder
 
 ![Screenshot 2025-05-24 215253](https://github.com/user-attachments/assets/8f413fef-2214-400e-8a62-986ae7639336)
