@@ -71,11 +71,12 @@ fc hello.txt Rose.txt
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
 
 Open Notepad with filename 1.bat and type the following batch script
+```
 @echo off
 set name=John
 echo Hello, %name%!
 pause
-
+```
 Execute the batch file 1.bat
 
 ## OUTPUT
@@ -93,6 +94,7 @@ Ask the user if they want to check another number.
 Repeat the process if the user enters Y, and exit with a thank-you message if the user enters N.
 Handle invalid inputs for the continuation prompt (Y/N) gracefully.
 
+```
 @echo off
 :main
 set /p number=Enter a number: 
@@ -112,7 +114,7 @@ goto choice
 :end
 echo Thank you for using the odd number checker!
 pause
-
+```
 ## OUTPUT
 
 ![Screenshot 2025-05-24 221652](https://github.com/user-attachments/assets/cf7cf321-29b7-41d2-b3d8-9208c2e37ae0)
@@ -121,12 +123,13 @@ pause
 
 Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
 
+```
 @echo off
 for %%i in (1 2 3 4 5) do (
     echo Number: %%i
 )
 pause
-
+```
 ## OUTPUT
 
 ![Screenshot 2025-05-24 221841](https://github.com/user-attachments/assets/507647cf-6fe1-4846-9aad-30b6cdfeb6ad)
@@ -135,6 +138,7 @@ pause
 
 Write a batch script to check whether a file named sample.txt exists in the current directory. If the file exists, display the message sample.txt exists. Otherwise, display sample.txt does not exist. Pause the script at the end to view the result.
 
+```
 @echo off
 if exist sample.txt (
     echo sample.txt exists.
@@ -147,6 +151,7 @@ Use the IF EXIST conditional statement.
 Make sure the script works for files located in the same directory as the batch file.
 Use pause to keep the command window open after displaying the message.
 Expected Output (if the file exists):
+```
 
 ## OUTPUT
 
@@ -158,6 +163,7 @@ Create a File – Creates a file named newfile.txt with the content This is a ne
 Exit – Exits the script with a goodbye message
 The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
 
+```
 @echo off
 :menu
 echo 1. Say Hello
@@ -179,7 +185,7 @@ goto menu
 :end
 echo Goodbye!
 pause
-
+```
 
 ## OUTPUT
 
